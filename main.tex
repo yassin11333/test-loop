@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
 \addbibresource{test-loop-2.bib}
 
 \title{Test Loop Project}
@@ -14,12 +14,16 @@
 \maketitle
 
 \section{Introduction}
-This is a test project to verify the Zotero -- GitHub -- Overleaf workflow loop.
+Three-dimensional concrete printing (3DCP) is a rapidly emerging construction technology that combines materials science with digital fabrication to build concrete structures layer by layer, often without conventional formwork. This approach promises reduced construction time, lower costs, and less material waste, since formwork alone can account for 35--60\% of the total cost of concrete construction~\cite{zhu3DConcretePrinting2021a}.
 
-We can cite a reference like this~\cite{premStructuralBuildupModel2024a} and also this one~\cite{zhu3DConcretePrinting2021a}.
+A central challenge in extrusion-based 3DCP is ensuring that each deposited layer can support the weight of subsequent layers before the material has fully hardened. This requirement is closely linked to the structural build-up behaviour of fresh cementitious materials, which is governed by thixotropy and early-age hydration~\cite{premStructuralBuildupModel2024a}. Thixotropic behaviour involves reversible flocculation and deflocculation of cement particles, while hydration contributes an irreversible gain in strength over time. Understanding and predicting this build-up is essential for achieving adequate buildability during printing.
+
+Prem et al.~\cite{premStructuralBuildupModel2024a} proposed a theoretical model based on structural kinetics to predict the evolution of both static and dynamic yield stress of printable concrete. Their model accounts for flocculation, deflocculation, and chemical hydration, providing a time-independent constitutive relationship between shear stress and shear rate. Parametric studies demonstrated that the model agrees well with experimental data and can effectively characterise the structural build-up of 3D-printable concrete.
+
+Zhu et al.~\cite{zhu3DConcretePrinting2021a} investigated the use of 3DCP to fabricate permanent (stay-in-place) formwork for reinforced concrete columns. Their study examined the influence of hydroxypropyl methyl cellulose content and water-to-binder ratios on rheological properties, structural build-up, and mechanical performance. The optimum mixture was used to print formwork shells, which were then reinforced with conventional steel bars and filled with cast-in-place concrete. The resulting columns exhibited higher stiffness and bearing capacity compared to counterparts made with conventional formwork, demonstrating a practical application of 3DCP technology.
 
 \section{Conclusion}
-If this compiles and both citations appear, the loop is complete.
+Both studies highlight the importance of understanding fresh-state behaviour in 3DCP: from the fundamental modelling of structural build-up~\cite{premStructuralBuildupModel2024a} to its practical exploitation in permanent formwork applications~\cite{zhu3DConcretePrinting2021a}.
 
 \printbibliography
 
